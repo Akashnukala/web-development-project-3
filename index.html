@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Task 3</title>
+</head>
+<body>
+    <!-- Alert div -->
+    <div class="alert alert-warning alert-dismissible fade show black" role="alert">
+        Upto 50% off <span class="green-text-sale">Spring Sale</span> For now & later from <span class="red-price">$7.99</span>
+        <button type="button" class="close round-close" data-dismiss="alert" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+        </button>
+    </div>
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+  <a class="navbar-brand font-weight-bolder" href="#" style="font-weight: 800;">AMINO</a>
+  <div class="non-hiding-nav-items order-lg-2
+  ">
+  <a href="#"><i title="Search" class="bi bi-search fa-lg"></i></a>
+  <a href="#"><i title="Profile" class="bi bi-person fa-lg"></i></a>
+  <a href="#"><i title="Notifications" class="bi bi-heart fa-lg"></i><sub title="1 New Notification" style="margin-left: 4px; border: 5px solid red; color: white; background-color: red; border-radius: 10px;">1</sub></a>
+  <a href="#"><i title="Cart" class="bi bi-basket2 fa-lg"></i><sub title="Cart Items: 2" style="margin-left: 4px; border: 5px solid red; color: white; background-color: red; border-radius: 10px;">2</sub></a>
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown mx-4">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          HOME PAGE
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown mx-4">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SHOP
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown mx-4">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PRODUCT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown mx-4">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PAGES
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown mx-4">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          BLOG
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="main-carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/dryfruitscarousel1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/dryfruitscarousel2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="absolute-content text-dark">
+    <h6>DISCOVER 100% ORGANIC</h6>
+    <h5>DRY FRUITS</h5>
+    <h4>UPTO 50% OFF</h4>
+    <a class="shop-now" href="">SHOP NOW</a>
+  </div>
+</div>
+  
+    <div class="row w-100 special-container">
+      <div class="col-12 my-4 my-lg-0 col-lg-4">
+        <div class="col-img">
+          <img src="./assets/orange-sale.jpg" alt="">
+          <div class="image-info">
+            <h4>Orange Juice Natural</h4>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 my-4 my-lg-0 col-lg-4">
+        <div class="col-img">
+          <img src="./assets/jam-sale.jpg" alt="">
+          <div class="image-info">
+            <h4>Jam Maj Spring Sale</h4>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 my-4 my-lg-0 col-lg-4">
+        <div class="col-img">
+          <img src="./assets/Amla-Candy.jpg" alt="">
+          <div class="image-info text-dark">
+            <h4>Amla Candy & Murabba</h4>
+            <a href="#" class="text-dark">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-container text-center">
+      <h3 class="italic-title">Shop By Categories</h3>
+      <h3><span style="font-weight: 700;">FEATURED CATEGORIES</span></h3>
+      <img src="./assets/underline.png" alt="">
+    </div>
+
+    <div class="row w-100 special-container text-center">
+      <div class="col-12 py-4 col-md-6 col-lg-2 py-lg-0 ">
+        <div class="col-img-2">
+            <a href="#" class="text-dark" style="text-decoration: none;">
+                <img src="./assets/fruits.png" alt="">
+                <h5>Fruits</h5>
+            </a>
+        </div>
+      </div>
+      <div class="col-12 py-4 col-md-6 col-lg-2 py-lg-0 ">
+        <div class="col-img-2">
+            <a href="#" class="text-dark" style="text-decoration: none;">
+                <img src="./assets/flour.png" alt="">
+                <h5>Flour</h5>
+            </a>
+        </div>
+      </div>
+      <div class="col-12 py-4 col-md-6 col-lg-2 py-lg-0 ">
+        <div class="col-img-2">
+            <a href="#" class="text-dark" style="text-decoration: none;">
+                <img src="./assets/vegetables.png" alt="">
+                <h5>Vegetables</h5>
+            </a>
+        </div>
+      </div>
+      <div class="col-12 py-4 col-md-6 col-lg-2 py-lg-0 ">
+        <div class="col-img-2">
+            <a href="#" class="text-dark" style="text-decoration: none;">
+                <img src="./assets/meat.png" alt="">
+                <h5>Meat</h5>
+            </a>
+        </div>
+      </div>
+      <div class="col-12 py-4 col-md-6 col-lg-2 py-lg-0 ">
+        <div class="col-img-2">
+            <a href="#" class="text-dark" style="text-decoration: none;">
+                <img src="./assets/flavoured milk.png" alt="">
+                <h5>Flavoured Milk</h5>
+            </a>
+        </div>
+      </div>
+      <div class="col-12 py-4 col-md-6 col-lg-2 py-lg-0 ">
+        <div class="col-img-2">
+            <a href="#" class="text-dark" style="text-decoration: none;">
+                <img src="./assets/jam.png" alt="">
+                <h5>Jam</h5>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="row special-container py-0">
+        <div class="col-12 col-md-6 py-4 col-lg-3">
+          <div class="jumbo-data">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+              <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+            <div class="jumbo-data-content">
+              <h5>Free Shipping</h5>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 py-4 col-lg-3">
+          <div class="jumbo-data">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+              <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+            </svg>
+            <div class="jumbo-data-content">
+              <h5>Free Returns</h5>
+              <p>Returns are free within 9 days</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 py-4 col-lg-3">
+          <div class="jumbo-data">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+              <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+            </svg>
+            <div class="jumbo-data-content">
+              <h5>Support 24/7</h5>
+              <p>Contact us 24 hrs a day</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 py-4 col-lg-3">
+          <div class="jumbo-data">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+              <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+            <div class="jumbo-data-content">
+              <h5>Free Shipping</h5>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-container text-center">
+      <h3 class="italic-title">See Our Latests</h3>
+      <h3><span style="font-weight: 700;">NEW ARRIVALS</span></h3>
+      <img src="./assets/underline.png" alt="">
+    </div>
+
+
+    <div class="special-container">
+      <div class="shop-cards text-center">
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/apple.jpg" class="card-img-top" alt="...">
+          </div><br>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fresh Apple 1KG</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$5.00 - $50.00</p>
+          </div>
+        </div></a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom"><h3><span style="border-radius: 40px; padding: 10px;" class="badge badge-danger">Sale</span></h3>
+            <img src="./assets/freshavacado.png" class="card-img-top" alt="...">
+          </div><br> 
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fresh Avacado 1KG</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <div style="display: inline-flex;">
+            <del style="color: black;">$20</del>&nbsp;&nbsp;
+            <p class="shop-price"> $5.00 - $50.00</p></div>
+          </div>
+        </div></a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/macadamianuts.png" class="card-img-top" alt="...">
+          </div><br>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fresh Macadamia Nuts</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$4.00 - $40.00</p>
+          </div>
+        </div></a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/freshorganictomato.png" class="card-img-top" alt="...">
+          </div><br>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fresh Organic Tomatos</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$5.00 - $50.00</p>
+          </div>
+        </div></a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/freshstrawberry.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fresh Strawberry 1KG</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$4.00 - $40.00</p>
+          </div>
+        </div></a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/freshmango.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Fresh Mango 1KG</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$4.00 - $40.00</p>
+          </div>
+        </div></a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/wildpecannuts.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Wild Pecan Nuts</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$4.00 - $40.00</p>
+          </div>
+        </div>
+      </a>
+        <a href="#" style="text-decoration: none;">
+        <div class="card" >
+          <div class="card-img-custom">
+            <img src="./assets/betteraves.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Betteraves BIO</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+            <p class="shop-price">$4.00 - $40.00</p>
+          </div>
+        </div>
+      </a>
+      </div>
+
+    </div>
+
+
+    <div style="background-color: #83bc2e;" class="special-container margin-top-6 py-0 row">
+      <div class="col-12 col-md-6 image-setting">
+        <img src="./assets/frizzi-broccoli(1).png" alt="">
+      </div>
+      <div class="col-12 col-md-6 add-content">
+        <div>
+          <h2 class="add-title">Natural Product</h2>
+          <h1 class="add-main-title">SAVE 40% OFF</h1>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</p>
+        <div class="time">
+          <div class="hrs"><h3>23</h3><span>HOURS</span></div><span class="colon">:</span>
+          <div class="min"><h3>59</h3><span>MINS</span></div><span class="colon">:</span>
+          <div class="sec"><h3>53</h3><span>SECS</span></div>
+        </div>
+        <a class="shop-now" href="#">SHOP NOW</a>
+      </div>
+    </div>
+    
+
+
+    <div class="special-container text-center">
+      <h3 class="italic-title">My Choosee Us</h3>
+      <h3><span style="font-weight: 700;">WHY PEOPLE LOVE AMINO</span></h3>
+      <img src="./assets/underline.png" alt="">
+    </div>
+
+    <div class="row w-100 special-container testimonials">
+      <div class="col-12 col-md-6">
+        <div class="card w-100 py-5">
+          <div class="card-grid">
+            <div class="img-user">
+              <img src="./assets/4.jpg" alt="">
+            </div>
+            <div class="testimonial-content">
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, consectetur illo. Recusandae perferendis cumque est nemo alias incidunt, omnis corporis? Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+              <h5 class="author">Sandy Wilcke</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card w-100 py-5">
+          <div class="card-grid">
+            <div class="img-user">
+              <img src="./assets/3.jpg" alt="">
+            </div>
+            <div class="testimonial-content">
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, consectetur illo. Recusandae perferendis cumque est nemo alias incidunt, omnis corporis? Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+              <h5 class="author">John Doe</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products-bg">
+      <div class="special-container text-center">
+        <h3 class="italic-title">See Our Latest</h3>
+        <h3><span style="font-weight: 700;">OUR PRODUCTS</span></h3>
+        <img src="./assets/underline.png" alt="">
+      </div>
+
+      <div class="w-100 special-container">
+
+        <!-- NAVS -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-fruits-tab" data-toggle="pill" href="#pills-fruits" role="tab" aria-controls="pills-fruits" aria-selected="true">FRUITS</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-flour-tab" data-toggle="pill" href="#pills-flour" role="tab" aria-controls="pills-flour" aria-selected="false">FLOUR</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-vegetable-tab" data-toggle="pill" href="#pills-vegetable" role="tab" aria-controls="pills-vegetable" aria-selected="false">VEGETABLE</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-meat-tab" data-toggle="pill" href="#pills-meat" role="tab" aria-controls="pills-meat" aria-selected="false">MEAT</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-milk&egg-tab" data-toggle="pill" href="#pills-milk&egg" role="tab" aria-controls="pills-milk&egg" aria-selected="false">MILK & EGGS</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-jam-tab" data-toggle="pill" href="#pills-jam" role="tab" aria-controls="pills-jam" aria-selected="false">JAM</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-fruits" role="tabpanel" aria-labelledby="pills-fruits-tab">
+
+            <!-- FRUITS -->
+            <div class="shop-cards text-center" id="fruits">
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="./assets/orange.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: black;">Fresh Orange</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="./assets/apple.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: black;">Fresh Apple</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/R.27bd77b7a2a0a4c6ba8f97576fd0225d?rik=1HtkqaueFtXWdw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f34500000%2fBanana-3-bananas-34512789-1000-1000.jpg&ehk=YtXK%2b7KVhygNYcjtRgT1woADUQv4X%2b2AHMXReiMLN8w%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: black">Fresh Banana</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://thumbor.thedailymeal.com/wXWLNrcbQC9VBNV4kD1sm7nb9sE=//https://www.thedailymeal.com/sites/default/files/story/2017/shutterstock_pineapple.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Pineapple</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$15.00 - $50.00</p>
+                  </div></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="pills-flour" role="tabpanel" aria-labelledby="pills-flour-tab">
+            <!-- FLOUR -->
+            <div class="shop-cards text-center" id="flour">
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="./assets/wheat.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Wheat Flour</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.epfcyCNAOlkcSyN7kNAHbgHaHZ?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Ragi Flour</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://img1.exportersindia.com/product_images/bc-full/2018/11/3820052/maida-flour-1543390702-4507536.jpeg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Maida Flour</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.mSoJeXcukPjfF4R0Z6WfYAHaE8?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Rice Flour</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-vegetable" role="tabpanel" aria-labelledby="pills-vegetable-tab">
+            <!-- VEGETABLE -->
+            <div class="shop-cards text-center" id="vegetables">
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="./assets/onion.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Onion</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.zB7AATBDNYVwv3rUfXbYcwHaE8?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Potato</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/R.154fe436b5688a29f82820107fa723b1?rik=wJOSxtr6N0GoZg&riu=http%3a%2f%2ftips.pk%2fwp-content%2fuploads%2f2015%2f12%2flady-fingers.jpg&ehk=ozFWm79zAZTYEYxdbp0TLRVYsnYNqKZKuzbEdT18Whs%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Lady Finger</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.ywFAnIFYNSQqq9Y8QGBYrwHaIG?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Tomato</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-meat" role="tabpanel" aria-labelledby="pills-meat-tab">
+            <!-- Meat -->
+            <div class="shop-cards text-center" id="meat">
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/R.ad5b9e7e25cb9db80fe4357f7277dab6?rik=y3jjhZ9pnZTL2w&riu=http%3a%2f%2fonedaycart.com%2fmedia%2fcatalog%2fproduct%2fcache%2f1%2fthumbnail%2f9df78eab33525d08d6e5fb8d27136e95%2fc%2fh%2fchicken_meat.jpg&ehk=ax%2f80ilWCSO92VhxD0khhsZITIYKaF3m%2bM9pbqdB65k%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Chicken</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/R.5c505c6380f1a2d78f1bc163269dcc7d?rik=uIyyAxjqmpbMyA&riu=http%3a%2f%2f43s0w3yikyo2qsm4r33qc6d7.wpengine.netdna-cdn.com%2fwp-content%2fuploads%2f2014%2f04%2fDiced-mutton.jpg&ehk=Gl1U960FQoKa9XaFZa2Yka21YJ92ImZvXtm0CqZAm8I%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Mutton</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://sparklightrm.com/wp-content/uploads/2020/08/Fish-Meat-Gallery-768x432.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Fish Meat</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/R.7a98b07d3bafb7a797d6d390f6029f58?rik=GP4eVh5AsncP0Q&riu=http%3a%2f%2fallysfood.co.za%2fwp-content%2fuploads%2f2020%2f07%2fprawn-meat.png&ehk=vH85MuBW67GgnhUpXZG2cq94Vfop23wh5ttFXrP%2bagI%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fresh Prawns</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-milk&egg" role="tabpanel" aria-labelledby="pills-milk&egg-tab">
+            <!-- Milk and eggs -->
+            <div class="shop-cards text-center" id="milkandeggs">
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.cx6nwuUhn9WU8GaKlrOFNQHaEX?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Milk</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/800424914_1-masqati-flavoured-milk-badam-bottle.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flavoured Milk Badam</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://www.nascence.co.za/wp-content/uploads/2019/07/layers-poultry-egg-farming-business-plan-1.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Eggs</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.pEyWnKMCP-SJ4lENHJVE-wHaE6?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Eggs</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-jam" role="tabpanel" aria-labelledby="pills-jam-tab">
+            <!-- jams -->
+            <div class="shop-cards text-center" id="jams">
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/R.094dcdd0afbdc09abfb921ac30d8678d?rik=yhtSsZWXk2hTjw&riu=http%3a%2f%2fwww.stonewallkitchen.com%2fon%2fdemandware.static%2f-%2fSites-swk-catalog%2fdefault%2fdw2ea873e5%2fimages%2fM101309_ALT.jpg&ehk=gdEHaU1i3Ql9fg%2fSx02gmIUFqtDxw0VDISOB%2blLa%2bG4%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Red Raspberry Jam</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://ssswn.com/wp-content/uploads/2020/10/51T-QDc-7uL._SL1000_.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Kisan Jam</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.9kZ-EJNniPhGNiDAxZXmMgHaHa?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Jam</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$4.00 - $40.00</p>
+                  </div></a>
+              </div>
+              <div class="card" >
+                <a href="#" style="text-decoration: none;">
+                  <div class="card-img-custom">
+                    <img src="https://th.bing.com/th/id/OIP.f4ZBKk2eqkc_gYxXmuU7vQHaLG?pid=ImgDet&w=1200&h=1798&rs=1" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Mango Jam</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Shop</h6>
+                    <p class="shop-price">$5.00 - $50.00</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+
+
+    <div class="special-container text-center">
+      <h3 class="italic-title">Read Our Blog</h3>
+      <h3><span style="font-weight: 700;">LATEST NEWS</span></h3>
+      <img src="./assets/underline.png" alt="">
+    </div>
+
+    <div class="special-container">
+      <div class="blog-grid">
+        <div class="blog-card">
+          <a href="#" style="text-decoration: none;">
+            <div class="blog-img">
+              <img src="./assets/snacks.jpg" alt="">
+              <div class="tags">
+                <span style="border: 1px solid black;">SNACKS</span>
+              </div>
+            </div>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla sequi fugit sit vero id.</p>
+          </a>
+          <div class="blog-by">
+            <p>April 24, 2022 <a href="#" class="by" style="text-decoration: none;">by admin</a></p>
+          </div>
+        </div>
+
+
+        <div class="blog-card">
+          <a href="#" style="text-decoration: none;">
+            <div class="blog-img">
+              <img src="./assets/chips.jpg" alt="">
+              <div class="tags">
+                <span style="border: 1px solid black;">CHIPS</span>
+              </div>
+            </div>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla sequi fugit sit vero id.</p>
+          </a>
+          <div class="blog-by">
+            <p>April 24, 2022 <a href="#" class="by" style="text-decoration: none;">by admin</a></p>
+          </div>
+        </div>
+
+
+        <div class="blog-card">
+          <a href="#" style="text-decoration: none;">
+            <div class="blog-img">
+              <img src="./assets/uncat.png" alt="">
+              <div class="tags">
+                <span style="border: 1px solid black;">UNCATEGORIZED</span><span style="border: 1px solid black;">WORDPRESS</span>
+              </div>
+            </div>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla sequi fugit sit vero id.</p>
+          </a>
+          <div class="blog-by">
+            <p>April 24, 2022 <a href="#" class="by" style="text-decoration: none;">by admin</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer>
+      <div class="row special-container text-white custom-gap-4">
+        <div class="col-12 mb-5 mb-lg-0 col-lg-4 text-center text-md-left">
+          <h4 class="mb-3">LET'S KEEP IN TOUCH</h4>
+          <p class="mb-3">Sign up our e-mail to get latest news</p>
+          <form class="sign-up mt-5">
+            <input type="text" placeholder="Enter your email address" >
+            <button>SIGN UP</button>
+          </form>
+        </div>
+        <div class="col-12 col-lg-8 pl-lg-5">
+          <div class="row text-center text-md-left">
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+              <h6>ABOUT US</h6>
+              <ul class="about">
+                <li>M-F 9AM - 5PM EST</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg> <a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg> <a href="#">+(012) 1234 567 891</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg> <a href="#">example@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="col-12  col-md-4 mb-5 mb-md-0">
+              <h6>EXTRAS</h6>
+              <ul>
+                <li><a href="#">Whishlist</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">My account</a></li>
+              </ul>
+            </div>
+            <div class="col-12  col-md-4 mb-5 mb-md-0">
+              <h6>INFROMATION</h6>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Customer Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="special-container pt-0">
+        <div class="footer-last">
+          <div class="socials">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="fluid" style="display: inline-flex;">
+          <p>Copyright by PlazaThemes. All Rights Reserved.</p>
+          <img class="mx-2" style="width: 30px;" src="./assets/skrill.jpg" alt="">
+          <img class="mx-2" style="width: 50px;" src="./assets/bitcoinb.jpg" alt="">
+          <img class="mx-2" style="width: 40px;" src="./assets/americanexpress.jpg" alt="">
+          <img class="mx-2" style="width: 40px;" src="./assets/paypalpp.png" alt="">
+          <img class="mx-2" style="width: 40px;" src="./assets/mastercard.jpg" alt="">
+          <img class="mx-2" style="width: 40px;" src="./assets/visa.jpg" alt="">
+        </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
